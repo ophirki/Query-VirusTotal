@@ -89,7 +89,7 @@ def queryVT(f_path):
                 }
 
 
-class TrapxHandler(BaseHTTPRequestHandler):
+class MyHandler(BaseHTTPRequestHandler):
 
     def _set_get_response(self):
         # Setting the GET response parameters
@@ -147,8 +147,8 @@ class TrapxHandler(BaseHTTPRequestHandler):
 
 
 def main():
-    # Setting up a multi-threaded http server with trapxHandler
-    server = ThreadingHTTPServer(("", PORT), TrapxHandler)
+    # Setting up a multi-threaded http server with MyHandler
+    server = ThreadingHTTPServer(("", PORT), MyHandler)
     print("serving at port", PORT)
     server.serve_forever()
 
