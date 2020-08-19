@@ -10,7 +10,7 @@ PORT = 8080
 FILES_STORE_PATH = os.path.join(os.getcwd(), r'server files')
 VT_POST_URL = "https://www.virustotal.com/vtapi/v2/file/scan"
 VT_GET_URL = "https://www.virustotal.com/api/v3/files/"
-API_KEY = "968e20bb8c9e70eed24833c3c4e931c9679643ef5b00a055b0af4bfeabea76b6"
+API_KEY = "YOUR-API-KEY"
 HTTP_STATUS_CODE = {200: "Successful.",
                     204: "Request rate limit exceeded. You are making more requests than allowed."
                          " You have exceeded one of your quotas (minute, daily or monthly).\n"
